@@ -1331,14 +1331,11 @@ footer a:hover {
 =============================== */
 .product-card .product-image {
     display: block;
-    width: 100%;
-    height: auto;
-
-    object-fit: contain; /* mantiene le proporzioni */
-    background: linear-gradient(to bottom, #fafafa, #fff);
-    border-radius: 0;
-    transition: transform 0.4s ease, opacity 0.4s ease;
-    margin: 0;
+    width: calc(100% - 40px); /* margine totale 20px per lato */
+    margin: 20px auto;        /* margine sopra, sotto e ai lati */
+    border-radius: 12px;      /* OPTIONAL: per dare un aspetto più morbido */
+    object-fit: contain;
+    background: #fff;
 }
 
 
